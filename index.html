@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Speed Typing Test</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="typing.css">
+</head>
+
+<body>
+  <div class="main-bg">
+  <div class="container main-bg py-4" id="speedTypingTest">
+    <h1 class="main-h1 text-center mb-3">Speed Typing Test</h1>
+    <p class="text-center">On your finger, let’s go!</p>
+
+    <!-- Timer Section -->
+    <div class="row align-items-center text-center mb-4">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
+        <img class="img-fluid image" src="https://assets.ccbp.in/frontend/dynamic-webapps/clock-img.png" alt="Clock" />
+      </div>
+      <div class="col-12 col-md-6">
+        <p id="timer"><span class="span1" id="span">0</span> seconds</p>
+      </div>
+    </div>
+
+    <!-- Typing Area -->
+    <div class="second-bg p-3 rounded">
+      <div class="d-none" id="spinner">
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status"></div>
+        </div>
+      </div>
+      <p id="quoteDisplay" class="text-center"></p>
+      <textarea id="quoteInput" class="form-control textarea mt-3" placeholder="Type here!!" rows="6"></textarea>
+    </div>
+
+    <!-- Result -->
+    <p id="result" class="text-center mt-3"></p>
+
+    <!-- Buttons -->
+    <div class="row justify-content-center mt-3">
+      <div class="col-6 col-md-3 mb-2 mb-md-0 text-center">
+        <button id="submitBtn" class="btn btn-primary w-100 first-btn">Submit</button>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <button id="resetBtn" class="btn btn-light w-100">Reset</button>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+      <div class="col-12 col-md-3 text-center">
+        <button id="startBtn" class="btn btn-success w-100">Start</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <script src="typing.js"></script>
+</body>
+
+</html>
